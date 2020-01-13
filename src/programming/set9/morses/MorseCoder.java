@@ -64,14 +64,13 @@ public class MorseCoder {
 
                 // If the character is a number, look in the number-array.
                 if ('0' <= c && c <= '9') {
-                    result += MORSE_NUMBERS[c - '0'];
+                    result += MORSE_NUMBERS[c - '0'] + " ";
                 }
 
                 // If the character is a letter, look in the letter-array.
                 if ('a' <= c && c <= 'z') {
-                    result += MORSE_ALPHABET[c - 'a'];
+                    result += MORSE_ALPHABET[c - 'a'] + " ";
                 }
-                result += " ";
             }
             result += "\n";
         }
