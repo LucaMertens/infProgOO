@@ -33,14 +33,9 @@ public class Mandelbrot extends GraphicsProgram {
         for (int w = 0; w < widthInSquares; w++) {
             // Draw row.
             for (int h = 0; h < heightInSquares; h++) {
-                boolean yes = isInMandelbrotSet(w, h);
-                Color squareColor = yes ? Color.BLUE : Color.WHITE;
-                if (w == 94 && h == 179) {
-                    squareColor = yes ? Color.RED : Color.GREEN;
-                }
+                Color squareColor = isInMandelbrotSet(w, h) ? Color.BLUE : Color.WHITE;
                 drawSquare(w, h, squareColor);
             }
-
         }
     }
 
