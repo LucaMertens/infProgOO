@@ -8,14 +8,13 @@ import java.util.HashMap;
 public class WordHistogram {
 
     /**
-     * How often each word is contained in the inputString. Key: word, value:
-     * numberOfOccurrences
+     * How often each word is contained in the inputString. Key: word, value: numberOfOccurrences
      */
     private HashMap<String, Integer> histogram = new HashMap<>();
 
     /**
-     * Counts how often each word is contained in the provided String and saves that
-     * data in a histogram.
+     * Counts how often each word is contained in the provided String and saves that data in a
+     * histogram.
      * 
      * @param inputString The string to analyse.
      */
@@ -32,9 +31,8 @@ public class WordHistogram {
     }
 
     /**
-     * Returns the number of times the given word appears in the text. The results
-     * should ignore case, that is, the Text "The tHe thE" contains the string "THE"
-     * three times.
+     * Returns the number of times the given word appears in the text. The results should ignore
+     * case, that is, the Text "The tHe thE" contains the string "THE" three times.
      * 
      * @param word the word to look for.
      * @return the number of times the word occurs in the text, ignoring case.
